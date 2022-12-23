@@ -1,0 +1,15 @@
+service: multidoc-summarizer
+
+provider:
+  name: aws  # provider
+  region: us-east-1  # aws region
+  #  memorySize: 8192  # optional, in MB, default is 1024
+  timeout: 30  # optional, in seconds, default is 6
+
+functions:
+  summarize:
+    image: 070835681152.dkr.ecr.us-east-1.amazonaws.com/over-quota-multidoc-summarizer:latest
+    events:
+      - http:
+          path: '/'
+          method: post
