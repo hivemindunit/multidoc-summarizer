@@ -1,4 +1,4 @@
-# Over Quota - MultiDoc Summarizer
+# MultiDoc Summarizer
 API to reduce input phrases list utilizing the latent semantic analysis algorithm.  
 - Input
   - documents: [String] - _list of phrases_
